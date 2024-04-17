@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #E6D7B9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* 设置主轴方向为垂直方向 */
+}
+
+.page-top {
+    background-color: #E6D7B9;
+    position:fixed;
+    top: 0;
+    z-index: 1000; /* 提高层级，确保在顶部 */
+    width:95%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.main-title {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.topnav {
+    text-align: right;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.topnav a {
+    margin-right: 20px;
+}
+
+.content {
+    display: flex; /* 使用flex布局 */
+    margin-top: 120px;
+}
+
+.left-column {
+    width: 25%;
+    background-color: #F5F5DC;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.right-column {
+    width: 75%;
+    padding: 20px;
+    margin-right: 50px;
+    background-color: #FFFFF5;
+}
+
+.intro{
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+.intro h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.intro p {
+    padding: 10px;
+}
+
+.quick-details,
+.my-translations,
+.other-works {
+    padding: 20px;
+}
+
+.photo-img{
+    max-width: 100%; /* 图片的最大宽度为父元素的100% */
+    height: auto; /* 高度自适应，保持图片比例 */
+}
+
+.tall-photo{
+    display: flex;
+}
+
+
+.tall-left,
+.tall-right{
+    max-width: 50%;
+    height:auto;
+    display: flex;
+    padding: 0, 10px;
+    flex-direction: column;
+}
+
+.tall-left{
+    margin-right: 10px;
+}
+
+.tall-right{
+    margin-left: 10px;
+}
+
+.bookshelf{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bookcover{
+    max-width: 35%;
+    height: auto;
+    align-items: flex-start;
+}

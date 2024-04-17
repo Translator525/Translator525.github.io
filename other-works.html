@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>other-works</title>
+    <link rel="stylesheet" href="MyWebStyle.css">
+</head>
+<body>
+    <div class="page-top">
+        <div class="main-title">
+            <h1 style=text-align:left;>A SML Website</h1>
+        </div>
+    
+        <div class="topnav">
+            <h2>
+                <b>
+                    <a href="MyWeb.html">Home</a>
+                    <a href="my-translations.html">Translations</a>
+                    <a href="other-works.html">OtherWorks</a>
+                </b>
+            </h2>
+        </div>
+    
+    </div>
+    
+ 
+<div class="content">
+    <div class="left-column">
+        <div class="homepage">
+            <img src="avatar01.png" alt="My Avatar">
+        </div>
+        <div class='homepage'>
+            <h1>Contact Me</h1>
+            <p>E-mail: xxxxxx@qq.com</p>
+            <p>Weibo: @xxxxxx</p>
+            <p>Instagram: @xxxxx</p>
+            <p>Tiktok: @xxxxx</p>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div class="other-works">
+            <h1>My Gallery</h1>
+            <div class="photo">
+                <img src="gallery/photo1.JPG" class="photo-img">
+                <p class="photo-desc">2021年6月摄于珠海</p>
+                <br><br>
+                <img src="gallery/photo2.JPG" class="photo-img">
+                <p class="photo-desc">20240330摄于北外</p>
+                
+                <br><br>
+
+            <div class="tall-photo">
+                <div class="tall-left">
+                    <img src="gallery/photo3.JPG" class="photo-img2">
+                    <br>
+                    <p class="photo-desc">2023年11月摄于北外</p>
+                </div>
+                <br><br>
+                <div class="tall-right">
+                    <img src="gallery/photo4.JPG" class="photo-img2">
+                    <br>
+                    <p class="photo-desc">2024年2月摄于湖南</p>
+                </div>
+            </div>
+       
+            <br><br>
+
+            <div class="like-bonus">
+                <!-- 音频插入 -->
+                <audio id="audioPlayer" controls="controls" height="100" width="100" style="display: none;">
+                    <source src="jam.mp3" type="audio/mp3" />
+                    <source src="jam.ogg" type="audio/ogg" />
+                  <embed height="100" width="100" src="jam.mp3" />
+                </audio>
+
+
+                <button onclick="like()">点赞</button>
+                <span id="likeCount">0</span>
+                
+                <p id="thankYouMessage"  style="display: none;">
+                    Thank you for sticking around and exploring my half-baked website!<br><br>
+                    As an bonus, here is a little blues jam I did two months ago.<br><br>
+                    I know my web design skills are as rough as an impromptu jam session.<br><br> 
+                    But hey, isn't life just one big improvisation?<br><br>
+                    Hope these give you a glimpse into my quirky world. : )<br><br>
+                </p>
+                
+                <!-- 彩蛋代码 -->
+                <script>
+                    var audio = document.getElementById("audioPlayer");
+                    var count = 0;
+
+                    function like() {
+                        count++;
+                        document.getElementById("likeCount").innerText = count;
+                          function playAudio() {
+                        audio.play();
+                    }
+                        if (count > 0) {
+                            document.getElementById("audioPlayer").style.display = "block";
+                            document.getElementById("thankYouMessage").style.display = "block";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
